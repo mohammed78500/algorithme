@@ -1,0 +1,24 @@
+DEBUT
+
+// Variables d'entrée
+REEL argent
+REEL prix
+ENTIER nombre_bonbons = 0
+
+// Lire les valeurs d'entrée
+LIRE argent
+LIRE prix
+
+// Tant que l'argent est supérieur ou égal au prix
+TANT QUE argent >= prix FAIRE
+// Déduire le prix du bonbon de l'argent disponible
+argent = argent - prix
+// Incrémenter le nombre de bonbons achetés
+nombre_bonbons = nombre_bonbons + 1
+FIN TANT QUE
+
+// Afficher le nombre maximum de bonbons
+AFFICHER nombre_bonbons
+
+FIN
+
